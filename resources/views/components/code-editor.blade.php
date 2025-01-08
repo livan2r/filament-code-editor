@@ -1,7 +1,7 @@
 <x-dynamic-component
-        :component="$getFieldWrapperView()"
-        :field="$field"
-        :label-sr-only="$isLabelHidden()"
+    :component="$getFieldWrapperView()"
+    :field="$field"
+    :label-sr-only="$isLabelHidden()"
 >
 
     <div
@@ -19,15 +19,24 @@
 
     <style>
         .cm-gutters {
-            min-height: 150px !important;
+            min-height: 350px !important;
         }
 
         .cm-scroller {
-            min-height: 150px !important;
+            min-height: 350px !important;
+            max-height: 500px !important;
         }
 
         .cm-gutters {
-            min-height: 150px !important;
+            min-height: 350px !important;
+        }
+
+        .dark .cm-gutters {
+            background-color: #444;
+        }
+        .dark .cm-activeLine {
+            background-color: #444;
+            border-color: #666;
         }
     </style>
 
